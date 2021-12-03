@@ -1,0 +1,341 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/access_fragment_id"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#6FFBC41E"
+    tools:context="Fragments.Accessingvideos">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/headingg"
+            android:layout_marginTop="100dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginStart="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:id="@+id/rev"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/back_icon" />
+
+            <TextView
+                android:id="@+id/Access_CourseName"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:autoSizeTextType="uniform"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:layout_height="40dp"
+                android:textColor="#FFFFFF" />
+
+
+        </LinearLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/leftside3"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/relativeLayout"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/rightside3"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/leftside3"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <com.google.android.exoplayer2.ui.PlayerView
+                    android:id="@+id/player_view3"
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:background="@android:color/background_dark"
+                    app:controller_layout_id="@layout/custom_controller"
+                    app:fastforward_increment="10000"
+                    app:hide_on_touch="true"
+                    app:player_layout_id="@layout/exo_simple_player_view"
+                    app:resize_mode="fit"
+                    app:rewind_increment="10000"
+                    app:show_timeout="5000"
+                    app:use_controller="true" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/rightside3"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/relativeLayout"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0">
+
+
+            </LinearLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:id="@+id/Intro_Name_access"
+            android:text="Introductory Video Name"
+            android:textStyle="bold"
+            android:autoSizeTextType="uniform"
+            android:padding="5dp"
+            android:autoSizeMinTextSize="10sp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/black" />
+
+
+
+
+        <LinearLayout
+            android:layout_marginEnd="30dp"
+            android:layout_marginStart="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="4dp"
+            android:gravity="center">
+
+
+
+            <Button
+                android:id="@+id/infobtn1"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="Info"
+                android:textSize="13sp"
+                android:background="@drawable/bottom_nav_background"/>
+
+            <Button
+                android:id="@+id/pdfbtn1"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="10dp"
+                android:text="PDF"
+                android:textSize="13sp"
+                android:background="@drawable/bottom_nav_background"/>
+
+            <Button
+                android:id="@+id/contentbtn1"
+                 android:layout_width="80dp"
+                 android:layout_height="40dp"
+                 android:text="Content"
+                 android:layout_marginRight="10dp"
+                android:textSize="13sp"
+            android:background="@drawable/bottom_nav_background"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginBottom="100dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginStart="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="4dp"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:id="@+id/pdf1">
+
+            <com.github.barteksc.pdfviewer.PDFView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/pdf_Access"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginBottom="100dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginStart="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="4dp"
+            android:orientation="vertical"
+            android:id="@+id/content1"
+            android:visibility="gone"
+            >
+
+            <TextView
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/List_VideoName_Access"
+                android:gravity="center"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/Access_Rec_View"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginBottom="100dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginStart="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/info1"
+            android:orientation="vertical">
+
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="4dp"
+                    android:orientation="vertical"
+                    android:id="@+id/information">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            xmlns:app="http://schemas.android.com/apk/res-auto"
+                            android:id="@+id/profile_imageav"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_marginRight="5dp"
+                            app:civ_border_width="2dp"
+                            app:civ_border_color="#FF000000"/>
+
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:id="@+id/Access_CreaterName"
+                            android:layout_gravity="center"
+                            android:layout_margin="4dp"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:text="KVSM Ganesh "
+                            android:padding="4dp"/>
+
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:text="Course Description :"
+                        android:padding="4dp"/>
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/Access_CourseDesc"
+                        android:layout_gravity="center"
+                        android:layout_margin="4dp"
+                        android:textSize="18sp"
+                        android:padding="4dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/Access_CoursePrice"
+                        android:layout_gravity="center"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:text="Course Price : 30 Rs/-"
+                        android:padding="4dp"/>
+
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:text="Transaction Details :"
+                        android:padding="4dp"/>
+
+                    <TextView
+                        android:id="@+id/trans"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="4dp"
+                        android:textSize="18sp"
+                       android:padding="4dp"/>
+
+                    <Button
+                        android:id="@+id/remove"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_margin="30dp"
+                        android:text="Delete FROM MY LIST"
+                        android:textSize="13sp"
+                        android:layout_gravity="center"
+                        android:padding="10dp"
+                        android:background="@drawable/bottom_nav_background"/>
+
+                </LinearLayout>
+
+            </ScrollView>
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</FrameLayout>
+

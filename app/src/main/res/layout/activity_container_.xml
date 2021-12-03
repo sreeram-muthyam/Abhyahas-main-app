@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:id="@+id/fragment_container"
+    tools:context="ram.muthyam.abhyahasbeta10.Container_Activity">
+
+    <include
+        layout="@layout/toolbar"
+        android:id="@+id/toolbar_id"
+        />
+
+    <com.ismaeldivita.chipnavigation.ChipNavigationBar
+        android:id="@+id/bottom_nav_menu_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cnb_menuResource="@menu/bottom_nav_menu"
+        android:background="@drawable/bottom_nav_background"
+        app:cnb_unselectedColor="@color/black"
+        app:cnb_radius="8dp"
+        app:cnb_orientationMode="horizontal"
+        android:layout_margin="30dp"
+        android:layout_alignParentBottom="true"
+        android:elevation="8dp"
+        />
+
+</RelativeLayout>

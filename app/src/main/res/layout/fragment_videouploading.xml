@@ -1,0 +1,189 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#797E8A70"
+    tools:context="Fragments.VideoUploadingFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:orientation="vertical"
+        android:layout_marginBottom="100dp"
+        android:layout_marginTop="100dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:id="@+id/back3"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:src="@drawable/back_icon"
+                android:layout_marginRight="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/carter_one"
+                android:gravity="center"
+                android:text="Upload course videos"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"/>
+
+
+        </LinearLayout>
+
+
+        <com.google.android.exoplayer2.ui.PlayerView
+            android:id="@+id/player_view_Upload"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:background="@android:color/background_dark"
+            app:controller_layout_id="@layout/custom_controller"
+            app:fastforward_increment="10000"
+            app:hide_on_touch="true"
+            app:player_layout_id="@layout/exo_simple_player_view"
+            app:resize_mode="fit"
+            app:rewind_increment="10000"
+            app:show_timeout="5000"
+            app:use_controller="true" />
+
+
+        <EditText
+            android:id="@+id/videoname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/bottom_nav_background"
+            android:hint="Enter Video Name"
+            android:paddingStart="10dp"
+            android:textColorHint="#B3A3A3" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:gravity="center">
+
+            <Button
+                android:layout_weight="1"
+                android:id="@+id/select"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:text="Select"
+                android:layout_margin="4dp"
+                android:padding="4dp"
+                android:elevation="8dp"
+                android:background="@drawable/bottom_nav_background"
+                android:backgroundTint="#BABABA"
+                android:textColor="#FFFFFF"/>
+
+            <Button
+
+                android:layout_weight="1"
+                android:visibility="gone"
+                android:id="@+id/upload"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:text="Upload"
+                android:layout_margin="4dp"
+                android:padding="4dp"
+                android:elevation="8dp"
+                android:background="@drawable/bottom_nav_background"
+                android:backgroundTint="#BABABA"
+                android:textColor="#FFFFFF"/>
+
+            <Button
+                android:layout_weight="1"
+                android:id="@+id/intro"
+                android:layout_width="130dp"
+                android:layout_height="40dp"
+                android:text="Upload Intro"
+                android:layout_margin="4dp"
+                android:padding="4dp"
+                android:elevation="8dp"
+                android:background="@drawable/bottom_nav_background"
+                android:backgroundTint="#BABABA"
+                android:textColor="#FFFFFF"/>
+
+        </LinearLayout>
+
+
+
+        <TextView
+            android:id="@+id/notice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:layout_margin="4dp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:text="The first video should be a summarize about the course and it will be visible to all the users even if it is a premium course."/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/finalsubmit"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:backgroundTint="#BABABA"
+                android:textColor="@color/white"
+                android:background="@drawable/bottom_nav_background"
+                android:text="Final Submit"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="UPLOADED VIDEOS LIST"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:gravity="center"/>
+
+            <TextView
+                android:background="@drawable/bottom_nav_background"
+                android:id="@+id/Intro_Content_Name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hello"
+                android:layout_margin="5dp"
+                android:padding="10dp"
+                android:paddingLeft="20dp"
+                android:textColor="@android:color/black"
+                android:autoSizeTextType="uniform"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:visibility="gone"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/Uploaded_Rec_View"/>
+
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</FrameLayout>

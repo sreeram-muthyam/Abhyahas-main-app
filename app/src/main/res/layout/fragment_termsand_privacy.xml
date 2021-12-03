@@ -1,0 +1,72 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/access_fragment_id"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#7070A7AF"
+        tools:context="Fragments.TermsandPrivacyFragment">
+
+        <!-- TODO: Update blank fragment layout -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="100dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:orientation="vertical"
+            android:layout_marginTop="100dp">
+
+            <LinearLayout
+                android:layout_width="350dp"
+                android:layout_height="40dp">
+
+                <ImageView
+                    android:id="@+id/backpolicy"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_height="40dp"
+                    android:src="@drawable/back_icon"
+                    android:layout_marginRight="10dp"/>
+
+                <TextView
+                    android:id="@+id/coursetrans"
+                    android:layout_width="220dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/carter_one"
+                    android:autoSizeTextType="uniform"
+                    android:text="Transactions History"
+                    android:textColor="#FFFFFF" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/amount_generated"
+                android:text="Total amount generated :"
+                android:textStyle="bold"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/amount_pending"
+                android:text="Amount pending to be settled :"
+                android:textStyle="bold"
+                android:layout_gravity="center"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/transaction_rec"/>
+
+
+        </LinearLayout>
+
+    </FrameLayout>
+

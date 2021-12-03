@@ -1,0 +1,503 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#6A355CA8"
+    tools:context="Fragments.MyprofileFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:orientation="vertical"
+        android:layout_marginBottom="100dp"
+        android:layout_marginTop="100dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:id="@+id/backprofile"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:src="@drawable/back_icon"
+                android:layout_marginRight="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/carter_one"
+                android:gravity="center"
+                android:text= "MY PROFILE PAGE"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"/>
+
+        </LinearLayout>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/profile_image_myprofile"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                app:civ_border_width="2dp"
+                app:civ_border_color="#FF000000"/>
+
+        <LinearLayout
+            android:id="@+id/vv"
+            android:visibility="gone"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:src="@drawable/upload_pic_icon" />
+
+            <TextView
+                android:id="@+id/textofpic"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:maxLines="1"
+                android:text="Set as Default"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:text="CHANGE"
+                android:layout_marginBottom="20dp"
+                android:textColor="@color/black"
+                android:background="@drawable/bottom_nav_background"
+                android:textStyle="bold"
+                android:textAllCaps="true"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:visibility="gone"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="FOLLOWERS"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:textSize="15dp"
+                        android:textAllCaps="true"
+                        android:layout_gravity="center"
+                        android:gravity="center"/>
+                    <View
+                        android:layout_width="100dp"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:background="@color/black"/>
+
+                    <TextView
+                        android:id="@+id/followersno"
+                        android:layout_width="150dp"
+                        android:layout_height="50dp"
+                        android:text="177"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textColor="@color/black"
+                        android:textSize="30sp"/>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="FOLLOWing"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:textSize="15dp"
+                        android:textAllCaps="true"
+                        android:layout_gravity="center"
+                        android:gravity="center"/>
+                    <View
+                        android:layout_width="100dp"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:background="@color/black"/>
+
+                    <TextView
+                        android:id="@+id/followingno"
+                        android:layout_width="150dp"
+                        android:layout_height="50dp"
+                        android:text="177"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textColor="@color/black"
+                        android:textSize="30sp"/>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbarStyle="outsideInset">
+
+
+
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="vertical">
+
+                   <TextView
+                       android:id="@+id/edit"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="EDIT"
+                       android:textColor="@color/black"
+                       android:textStyle="bold"
+                       android:textSize="15dp"
+                       android:textAllCaps="true"
+                       android:layout_gravity="end"
+                       android:layout_marginRight="20dp"
+                       android:gravity="end"
+                       android:layout_marginBottom="20dp"/>
+
+                   <TextView
+                       android:id="@+id/savee"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="SAVE"
+                       android:textColor="@color/black"
+                       android:textStyle="bold"
+                       android:textSize="15dp"
+                       android:textAllCaps="true"
+                       android:layout_gravity="end"
+                       android:layout_marginRight="20dp"
+                       android:gravity="end"
+                       android:layout_marginBottom="20dp"
+                       android:visibility="gone"/>
+
+
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_gravity="center"
+                       android:gravity="center"
+                       android:layout_marginLeft="20dp"
+                       android:layout_marginRight="20dp"
+                       android:layout_marginBottom="10dp"
+                       android:background="@drawable/bottom_nav_background">
+
+                       <TextView
+                           android:layout_width="70dp"
+                           android:layout_height="wrap_content"
+                           android:text="Name"
+                           android:layout_gravity="center"
+                           android:textSize="15sp"
+                           android:textStyle="bold"
+                           android:gravity="center"
+                           android:layout_marginStart="4dp"
+                           android:padding="4dp" />
+
+                       <EditText
+                           android:maxLength="15"
+                           android:enabled="false"
+                           android:id="@+id/fullnameep"
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:layout_gravity="center"
+                           android:background="@drawable/bottom_nav_background"
+                           android:hint="Full Name"
+                           android:textColor="@color/black"
+                           android:textColorHint="@color/black"
+                           android:padding="8dp"
+                           android:autoSizeTextType="uniform"
+                           android:textSize="14sp"
+                           android:paddingStart="12dp"/>
+
+
+
+
+                   </LinearLayout>
+
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_marginLeft="20dp"
+                       android:layout_marginRight="20dp"
+                       android:layout_marginBottom="10dp"
+                       android:background="@drawable/bottom_nav_background">
+
+                       <TextView
+                           android:layout_width="70dp"
+                           android:layout_height="wrap_content"
+                           android:text="Email"
+                           android:layout_gravity="center"
+                           android:textStyle="bold"
+                           android:gravity="center"
+                           android:textSize="15sp"
+                           android:padding="4dp"
+                           android:layout_marginStart="4dp"
+                           android:background="@drawable/bottom_nav_background"/>
+
+                       <EditText
+                           android:enabled="false"
+                           android:id="@+id/emailep"
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:background="@drawable/bottom_nav_background"
+                           android:layout_gravity="center"
+                           android:hint="Email ID"
+                           android:textColor="@color/black"
+                           android:padding="8dp"
+                           android:textSize="14sp"
+                           android:autoSizeTextType="uniform"
+                           android:paddingStart="12dp"
+                           android:textColorHint="@color/black" />
+
+
+
+                   </LinearLayout>
+
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_marginLeft="20dp"
+                       android:layout_marginRight="20dp"
+                       android:layout_marginBottom="10dp"
+                       android:layout_gravity="center"
+                       android:gravity="center"
+                       android:background="@drawable/bottom_nav_background">
+
+                       <TextView
+                           android:layout_width="70dp"
+                           android:layout_height="wrap_content"
+                           android:text="College"
+                           android:layout_gravity="center"
+                           android:textStyle="bold"
+                           android:gravity="center"
+                           android:textSize="15sp"
+                           android:layout_marginStart="4dp"
+                           android:padding="4dp"
+                           android:background="@drawable/bottom_nav_background"/>
+
+                       <EditText
+                           android:maxLength="27"
+                           android:enabled="false"
+                           android:id="@+id/collegeep"
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:background="@drawable/bottom_nav_background"
+                           android:layout_gravity="center"
+                           android:hint="College Name"
+                           android:autoSizeTextType="uniform"
+                           android:textColor="@color/black"
+                           android:padding="8dp"
+                           android:textSize="14sp"
+                           android:textColorHint="@color/black"
+                           android:paddingStart="12dp" />
+
+
+                   </LinearLayout>
+
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="35dp"
+                       android:layout_marginLeft="20dp"
+                       android:layout_marginRight="20dp"
+                       android:layout_marginBottom="10dp"
+                       android:background="@drawable/bottom_nav_background">
+
+                       <TextView
+                           android:layout_width="70dp"
+                           android:layout_height="match_parent"
+                           android:text="Year"
+                           android:textStyle="bold"
+                           android:textSize="15sp"
+                           android:gravity="center"
+                           android:layout_marginStart="4dp"
+                           android:padding="4dp"
+                           android:background="@drawable/bottom_nav_background"/>
+
+                       <EditText
+                           android:enabled="false"
+                           android:id="@+id/yearep"
+                           android:layout_width="match_parent"
+                           android:layout_height="35dp"
+                           android:background="@drawable/bottom_nav_background"
+                           android:layout_gravity="center"
+                           android:autoSizeTextType="uniform"
+                           android:hint="Year of Study"
+                           android:textColor="@color/black"
+                           android:padding="8dp"
+                           android:textSize="14sp"
+                           android:maxLength="1"
+                           android:inputType="numberSigned"
+                           android:textColorHint="@color/black"
+                           android:paddingStart="12dp" />
+
+
+                   </LinearLayout>
+
+
+
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_marginLeft="20dp"
+                       android:layout_marginRight="20dp"
+                       android:layout_marginBottom="10dp"
+                       android:background="@drawable/bottom_nav_background">
+
+                       <TextView
+                           android:layout_gravity="center"
+                           android:layout_width="70dp"
+                           android:layout_height="wrap_content"
+                           android:text="UPI ID"
+                           android:textSize="15sp"
+                           android:textStyle="bold"
+                           android:gravity="center"
+                           android:layout_marginStart="4dp"
+                           android:padding="4dp"
+                           android:background="@drawable/bottom_nav_background"/>
+
+
+                       <EditText
+                           android:enabled="false"
+                           android:id="@+id/phone"
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:background="@drawable/bottom_nav_background"
+                           android:layout_gravity="center"
+                           android:hint="Not provided"
+                           android:textColorHint="@color/black"
+                           android:textColor="@color/black"
+                           android:autoSizeTextType="uniform"
+                           android:padding="8dp"
+                           android:textSize="14sp"
+                           android:paddingStart="12dp"/>
+
+
+                   </LinearLayout>
+
+
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_marginLeft="20dp"
+                       android:layout_marginRight="20dp"
+                       android:layout_marginBottom="10dp"
+                       android:background="@drawable/bottom_nav_background">
+
+                       <TextView
+                           android:layout_gravity="center"
+                           android:layout_width="70dp"
+                           android:layout_height="wrap_content"
+                           android:text="Contact"
+                           android:textSize="15sp"
+                           android:textStyle="bold"
+                           android:gravity="center"
+                           android:layout_marginStart="4dp"
+                           android:padding="4dp"
+                           android:background="@drawable/bottom_nav_background"/>
+
+
+                       <EditText
+                           android:inputType="numberSigned"
+                           android:maxLength="10"
+                           android:id="@+id/contact"
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:layout_gravity="center"
+                           android:autoSizeTextType="uniform"
+                           android:background="@drawable/bottom_nav_background"
+                           android:enabled="false"
+                           android:hint="Not provided"
+                           android:padding="8dp"
+                           android:paddingStart="12dp"
+                           android:textColor="@color/black"
+                           android:textColorHint="@color/black"
+                           android:textSize="14sp" />
+
+
+                   </LinearLayout>
+
+
+
+
+
+                   <Button
+                       android:id="@+id/connect"
+                       android:layout_width="match_parent"
+                       android:layout_height="40dp"
+                       android:layout_margin="30dp"
+                       android:text="Connect with more people"
+                       android:textSize="13sp"
+                       android:layout_gravity="center"
+                       android:padding="10dp"
+                       android:textColor="@color/white"
+                       android:background="@drawable/custom_button2"/>
+
+                   <Button
+                       android:visibility="gone"
+                       android:id="@+id/deleteaccount"
+                       android:layout_width="match_parent"
+                       android:layout_height="40dp"
+                       android:layout_margin="30dp"
+                       android:text="DELETE ACCOUNT"
+                       android:textSize="13sp"
+                       android:layout_gravity="center"
+                       android:padding="10dp"
+                       android:textColor="@color/white"
+                       android:background="@drawable/custom_button2"/>
+
+
+
+               </LinearLayout>
+
+        </ScrollView>
+
+
+        </LinearLayout>
+
+
+</FrameLayout>

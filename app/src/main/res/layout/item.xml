@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="4dp"
+    android:layout_marginRight="4dp"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:selectableItemBackground"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_margin="4dp"
+            android:id="@+id/itemImage"
+            android:layout_width="200dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center_horizontal"
+            android:scaleType="fitXY"
+            android:src="@mipmap/ic_launcher"/>
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autoSizeTextType="uniform"
+            android:text="Sample Title"
+            android:textStyle="bold"
+            android:paddingLeft="10dp"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:ellipsize="end"
+            android:id="@+id/tv_sub_Title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sample"
+            android:paddingLeft="10dp"
+            android:autoSizeTextType="uniform"
+            android:textStyle="italic"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:layout_gravity="end"
+            android:id="@+id/item_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="4dp"
+            android:autoSizeTextType="uniform"
+            android:paddingRight="10dp"
+            android:text="Rs"
+            android:textColor="@android:color/black" />
+
+
+    </LinearLayout>
+
+
+
+</androidx.cardview.widget.CardView>

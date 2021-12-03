@@ -1,0 +1,100 @@
+<resources>
+    <string name="app_name">Abhyahas</string>
+    <string name="splash">@ Abhyahas</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="Abhyahas">Abhyahas</string>
+
+    <string-array name="Academic">
+
+        <item>NIT Trichy</item>
+        <item>NIT Warangal</item>
+        <item>NIT Surathkal</item>
+        <item>NIT Rourkela</item>
+        <item>NIT Calicut</item>
+        <item>MNNIT Allahabad</item>
+        <item>MNIT Jaipur</item>
+        <item>NIT Kurukshetra</item>
+        <item>SVNIT Surat</item>
+        <item>VNIT Nagpur</item>
+        <item>MANIT Bhopal</item>
+        <item>NIT Durgapur</item>
+        <item>NIT Jamshedpur</item>
+        <item>NIT Jalandhar</item>
+        <item>IIEST Shibpur</item>
+        <item>NIT Patna</item>
+        <item>NIT Silchar</item>
+        <item>NIT Hamirpur</item>
+        <item>NIT Raipur</item>
+        <item>NIT Delhi</item>
+        <item>NIT Agartala</item>
+        <item>NIT Andhra Pradesh</item>
+        <item>NIT Goa</item>
+        <item>NIT Meghalaya</item>
+        <item>NIT Puducherry</item>
+        <item>NIT Sikkim</item>
+        <item>NIT Srinagar</item>
+        <item>NIT Uttarakhand</item>
+        <item>NIT Manipur</item>
+        <item>NIT Arunachal Pradesh</item>
+        <item>NIT Nagaland</item>
+        <item>NIT Mizoram</item>
+        <item>IIT Madras</item>
+        <item>IIT Bombay</item>
+        <item>IIT Delhi</item>
+        <item>IIT Kanpur</item>
+        <item>IIT Kharagpur</item>
+        <item>IIT Roorkee</item>
+        <item>IIT Guwahati</item>
+        <item>IIT Hyderabad</item>
+        <item>IIT Indore</item>
+        <item>IIT (BHU) Varanasi</item>
+        <item>IIT (ISM) Dhanbad</item>
+        <item>IIT Bhubaneshwar</item>
+        <item>IIT Gandhinagar</item>
+        <item>IIT Ropar</item>
+        <item>IIT Patna</item>
+        <item>IIT Mandi</item>
+        <item>IIT Jodhpur</item>
+        <item>IIT Palakkad</item>
+        <item>IIT Tirupati</item>
+        <item>IIT Bhilai</item>
+        <item>IIT Jammu</item>
+        <item>IIT Goa</item>
+        <item>IIT Dharwad</item>
+        <item>Others</item>
+
+    </string-array>
+
+
+    <string-array name="NonAcademic">
+
+        <item>Programming Languages</item>
+        <item>Data Structure and Algorithms</item>
+        <item>Data Science</item>
+        <item>Machine Learning</item>
+        <item>Android development</item>
+        <item>Web development</item>
+        <item>Artificial Intelligence</item>
+        <item>Music</item>
+        <item>Dance</item>
+        <item>Drawing</item>
+        <item>Others</item>
+
+    </string-array>
+
+
+    <string-array name="Competative">
+
+        <item>JEE Mains Maths</item>
+        <item>JEE Mains Physics</item>
+        <item>JEE Mains Chemistry</item>
+        <item>JEE Advanced</item>
+        <item>EAMCET</item>
+        <item>GATE</item>
+        <item>G-MAT</item>
+        <item>GRE</item>
+        <item>CAT</item>
+        <item>Others</item>
+
+    </string-array>
+</resources>

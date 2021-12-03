@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <item
+        android:id="@+id/item3"
+        android:title="Reach Abhyahas"
+        app:showAsAction="never">
+        <menu>
+            <item
+                android:id="@+id/insta"
+                android:title="Instagram"/>
+            <item
+                android:id="@+id/fb"
+                android:title="Facebook"/>
+            <item
+                android:id="@+id/ln"
+                android:title="LinkedIn"/>
+            <item
+                android:id="@+id/gm"
+                android:title="G-mail"/>
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/share"
+        android:title="Share Abhyahas"
+        app:showAsAction="never" />
+
+
+    <item
+        android:id="@+id/reortprblm"
+        android:title="Report Problem"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/termsandconditions"
+        android:title="Terms and Conditions"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/visitwebsite"
+        android:title="Visit Website"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/contribute"
+        android:title="Contribute to Abhyahas"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/logout"
+        android:title="Log Out"
+        app:showAsAction="never" />
+</menu>

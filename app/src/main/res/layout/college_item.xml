@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+ <LinearLayout
+     android:minWidth="410dp"
+     android:id="@+id/vv2"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:orientation="vertical">
+
+
+     <RelativeLayout
+         android:layout_width="match_parent"
+         android:layout_height="35dp">
+
+         <TextView
+             android:text="College Name"
+             android:padding="4dp"
+             android:id="@+id/list_Col_name"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignParentLeft="true"
+             android:layout_alignParentStart="true"
+             android:layout_centerVertical="true"
+             android:layout_gravity="center_vertical"
+             android:textColor="@android:color/black"
+             android:textSize="18sp"/>
+
+         <TextView
+             android:layout_alignParentTop="true"
+             android:layout_alignParentBottom="true"
+             android:id="@+id/SHOW_ALL"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignParentEnd="true"
+             android:layout_marginLeft="218dp"
+             android:layout_marginEnd="2dp"
+             android:gravity="center"
+             android:text="Show All"
+             android:textSize="16sp"
+             android:textStyle="bold" />
+
+
+     </RelativeLayout>
+
+
+     <androidx.recyclerview.widget.RecyclerView
+         android:id="@+id/recycler_view_list"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_gravity="center_vertical"
+         android:orientation="horizontal" />
+
+
+
+ </LinearLayout>
+
+
+</LinearLayout>
